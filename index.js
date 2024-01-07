@@ -1,10 +1,10 @@
 const puppeteer = require('puppeteer');
 const twilio = require('twilio');
 
-const accountSid = 'AC06e2fdbbdf72047a45cabfdf8b1c5082';
-const authToken = 'd86e271ae31ecdfbec5a7aa237bdba79';
-const twilioNumber = '+19252302436'; // Your Twilio phone number
-const yourPhoneNumber = '+919700023546'; // Your phone number
+const accountSid = '';
+const authToken = '';
+const twilioNumber = ''; // Your Twilio phone number
+const yourPhoneNumber = ''; // Your phone number
 const client = twilio(accountSid, authToken);
 
 async function checkTicketAvailability(movieURL) {
@@ -50,5 +50,5 @@ async function sendTwilioNotification(message) {
 }
 
 // Example usage
-const movieURL = 'https://in.bookmyshow.com/hyderabad/movies/salaar-cease-fire-part-1/ET00301886';
+const movieURL = ''; //Movie Link
 checkTicketAvailability(movieURL);
